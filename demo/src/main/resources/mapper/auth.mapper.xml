@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.demo.mapper.RestMapper">
+    <!--private long id;
+    private String userName;
+    private String userPassword;
+    private String email;
+    private String phone;
+    private String salt;
+    private java.sql.Date time;
+    private java.sql.Timestamp timestamp;
+    private String ip;-->
+    <resultMap id="LoginUserResultMap" type="com.example.demo.bean.Loginuser">
+        <id column="id" property="id"/>
+        <result column="user_name" property="userName"/>
+        <result column="user_password" property="userPassword"/>
+        <result column="email" property="email"/>
+        <result column="phone" property="phone"/>
+        <result column="salt" property="salt"/>
+        <result column="ip_address" property="ip"/>
+    </resultMap>
+    <select id="getList" resultMap="LoginUserResultMap">
+        select * from loginuser;
+    </select>
+
+</mapper>

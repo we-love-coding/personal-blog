@@ -1,0 +1,47 @@
+eureka:
+  client:
+    service-url:
+      defaultZone=http://localhost:8761/eureka/:
+mybatis:
+  mapper-locations: classpath:mapper/*.mapper.xml
+
+server:
+  port: 8085
+  tomcat:
+    uri-encoding: utf-8
+spring:
+  application:
+    name: register-server
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: 123456
+    url: jdbc:mysql://localhost:3306/helper?serverTimezone=CTT&characterEncoding=utf8&useUnicode=true&autoReconnect=true&allowMultiQueries=true&useSSL=false&zeroDateTimeBehavior=CONVERT_TO_NULL
+    platform: mysql
+    druid:
+      initialSize: 1
+      minIdle: 200
+      maxActive: 1000
+      maxWait: 60000
+      timeBetweenEvictionRunsMillis: 60000
+      minEvictableIdleTimeMillis: 300000
+      validationQuery: SELECT 1
+      validationQueryTimeout: 60000
+      testWhileIdle: true
+      testOnBorrow: false
+      testOnReturn: false
+      poolPreparedStatements: true
+      maxPoolPreparedStatementPerConnectionSize: 20
+      maxOpenPreparedStatements: 20
+      connection-init-sqls: SET NAMES utf8mb4 COLLATE utf8mb4_unicode_ci
+
+  http:
+    encoding:
+      charset: UTF-8
+      force: true
+      enabled: true
+  redis:
+    host: 127.0.0.1
+    port: 6379
+    password: redis123
