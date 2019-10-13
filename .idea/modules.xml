@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/demo/demo.iml" filepath="$PROJECT_DIR$/demo/demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/helper_eureka/helper_eureka.iml" filepath="$PROJECT_DIR$/helper_eureka/helper_eureka.iml" />
+      <module fileurl="file://$PROJECT_DIR$/helper_login/helper_login.iml" filepath="$PROJECT_DIR$/helper_login/helper_login.iml" />
+      <module fileurl="file://$PROJECT_DIR$/helper_register/helper_register.iml" filepath="$PROJECT_DIR$/helper_register/helper_register.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/work_helper.iml" filepath="$PROJECT_DIR$/.idea/work_helper.iml" />
+    </modules>
+  </component>
+</project>

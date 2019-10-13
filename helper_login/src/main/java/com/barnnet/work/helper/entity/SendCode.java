@@ -33,7 +33,7 @@ public class SendCode {
     //随机数
     private static final String NONCE="123456";
     //短信模板ID
-    private static final String TEMPLATEID="14833116";
+    private static final String TEMPLATEID="14842155";
     //手机号
     private static final String MOBILE="15342572132";
     //验证码长度，范围4～10，默认为4
